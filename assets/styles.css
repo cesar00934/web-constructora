@@ -247,25 +247,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .check-list span { width: 25px; height: 25px; display: grid; place-items: center; flex: 0 0 auto; background: var(--accent); color: var(--ink); font-weight: 900; }
 
 .work-section { background: var(--paper); }
-.tiktok-layout { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 70px; align-items: start; }
-.tiktok-copy { position: sticky; top: 120px; padding-top: 20px; }
-.tiktok-logo { width: 66px; height: 66px; display: grid; place-items: center; background: var(--ink); color: white; }
-.tiktok-logo svg { width: 34px; fill: currentColor; }
-.tiktok-copy h3 { margin: 28px 0 15px; font: 900 39px/.98 var(--display); }
-.tiktok-copy p { margin: 0 0 27px; color: #5d5d5d; font-size: 14px; }
-.tiktok-embed-wrap { position: relative; min-height: 500px; padding: 28px; display: grid; place-items: center; background: white; border: 1px solid var(--line); box-shadow: 0 22px 65px rgba(17,17,17,.08); overflow: hidden; }
-.tiktok-embed-wrap blockquote { position: relative; z-index: 2; width: 100%; margin: 0 !important; }
-.embed-loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; z-index: 1; color: #777; }
-.embed-loading span { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); animation: bounce 1s infinite alternate; }
-.embed-loading span:nth-child(2) { animation-delay: .15s; }
-.embed-loading span:nth-child(3) { animation-delay: .3s; }
-.embed-loading p { width: 100%; margin: 7px 0 0; text-align: center; font-size: 12px; }
-.tiktok-fallback { position: relative; z-index: 3; width: min(100%, 470px); margin: 18px auto 0; padding: 20px; text-align: center; background: #f4f1ea; border-top: 3px solid var(--accent); }
-.tiktok-fallback strong { font: 800 23px/1 var(--display); text-transform: uppercase; }
-.tiktok-fallback p { margin: 8px 0 16px; color: #5d5d5d; font-size: 12px; }
-.tiktok-fallback .btn { min-height: 45px; padding: 10px 15px; font-size: 11px; }
-.tiktok-post-link { display: block; width: max-content; max-width: 100%; margin: 14px auto 0; border-bottom: 1px solid currentColor; font-size: 11px; font-weight: 800; }
-@keyframes bounce { to { transform: translateY(-8px); } }
+.work-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.work-card { position: relative; min-height: 330px; margin: 0; overflow: hidden; background: var(--ink); }
+.work-card img { width: 100%; height: 100%; min-height: 330px; object-fit: cover; transition: transform .35s ease; }
+.work-card:hover img { transform: scale(1.04); }
+.work-card figcaption { position: absolute; inset: auto 0 0; padding: 34px 18px 16px; color: var(--white); background: linear-gradient(transparent, rgba(0,0,0,.82)); font-size: 12px; font-weight: 800; letter-spacing: .6px; text-transform: uppercase; }
+.work-gallery-action { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 35px; }
+.work-gallery-action p { margin: 0; font-size: 14px; font-weight: 600; }
 
 .process-section { padding: 105px 0; background: var(--accent); color: var(--ink); }
 .process-section .section-label.light { color: rgba(17,17,17,.62); }
@@ -374,8 +362,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .feature-image { height: 480px; margin: 0 -15px; }
   .feature-image::after { background: linear-gradient(0deg, var(--ink) 0%, transparent 45%); }
   .feature-copy { padding: 65px 0 82px; }
-  .tiktok-layout { grid-template-columns: 1fr; gap: 35px; }
-  .tiktok-copy { position: static; }
+  .work-gallery { grid-template-columns: repeat(2, 1fr); }
   .process-grid { grid-template-columns: repeat(2, 1fr); }
   .process-step:nth-child(2) { border-right: 0; }
   .process-step:nth-child(n+3) { border-top: 1px solid rgba(17,17,17,.25); }
@@ -405,7 +392,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .service-card { min-height: 320px; }
   .feature-image { height: 390px; }
   .feature-copy h2, .process-intro h2 { font-size: 56px; }
-  .tiktok-embed-wrap { padding: 10px; min-height: 430px; }
+  .work-card, .work-card img { min-height: 260px; }
+  .work-gallery-action { align-items: stretch; flex-direction: column; text-align: center; }
   .process-grid { grid-template-columns: 1fr; }
   .process-step, .process-step:not(:first-child), .process-step:nth-child(3) { padding: 27px 0; border-right: 0; border-top: 1px solid rgba(17,17,17,.25); }
   .process-step h3 { margin-top: 22px; }

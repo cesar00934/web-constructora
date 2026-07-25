@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://[DOMINIO_FINAL]/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image><image:loc>https://[DOMINIO_FINAL]/assets/images/obra-excavacion-cimientos.webp</image:loc><image:title>Excavación y cimientos</image:title></image:image>
+    <image:image><image:loc>https://[DOMINIO_FINAL]/assets/images/obra-muro-andamio.webp</image:loc><image:title>Muros y albañilería</image:title></image:image>
+    <image:image><image:loc>https://[DOMINIO_FINAL]/assets/images/obra-techo-ladrillo-acero.webp</image:loc><image:title>Techos y estructuras</image:title></image:image>
+    <image:image><image:loc>https://[DOMINIO_FINAL]/assets/images/obra-muro-segundo-piso.webp</image:loc><image:title>Ampliación de segundo piso</image:title></image:image>
+    <image:image><image:loc>https://[DOMINIO_FINAL]/assets/images/obra-losa-concreto.webp</image:loc><image:title>Vaciado de losa</image:title></image:image>
+    <image:image><image:loc>https://[DOMINIO_FINAL]/assets/images/obra-encofrado-losa.webp</image:loc><image:title>Encofrado de losa</image:title></image:image>
   </url>
 </urlset>

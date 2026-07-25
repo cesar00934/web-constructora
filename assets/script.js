@@ -63,37 +63,6 @@
     link.addEventListener('click', () => track('phone_click'));
   });
 
-  const tiktokContainer = document.querySelector('.tiktok-embed-wrap');
-  const loadTiktok = () => {
-    if (!tiktokContainer || tiktokContainer.dataset.tiktokLoaded) return;
-    tiktokContainer.dataset.tiktokLoaded = 'true';
-    const status = tiktokContainer.querySelector('.embed-loading p');
-    const script = document.createElement('script');
-    script.src = 'https://www.tiktok.com/embed.js';
-    script.async = true;
-    script.onload = () => {
-      window.setTimeout(() => {
-        const embed = tiktokContainer.querySelector('.tiktok-embed');
-        if (embed && embed.offsetHeight > 120 && status) status.textContent = '';
-      }, 3500);
-    };
-    script.onerror = () => {
-      if (status) status.textContent = 'TikTok no pudo cargar la vista previa.';
-    };
-    document.body.appendChild(script);
-  };
-
-  if (tiktokContainer && 'IntersectionObserver' in window) {
-    const tiktokObserver = new IntersectionObserver((entries, currentObserver) => {
-      if (!entries[0].isIntersecting) return;
-      loadTiktok();
-      currentObserver.disconnect();
-    }, { rootMargin: '250px 0px' });
-    tiktokObserver.observe(tiktokContainer);
-  } else {
-    loadTiktok();
-  }
-
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     track('quote_request');
