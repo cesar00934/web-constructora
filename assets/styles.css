@@ -260,6 +260,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .embed-loading span:nth-child(2) { animation-delay: .15s; }
 .embed-loading span:nth-child(3) { animation-delay: .3s; }
 .embed-loading p { width: 100%; margin: 7px 0 0; text-align: center; font-size: 12px; }
+.tiktok-fallback { position: relative; z-index: 3; width: min(100%, 470px); margin: 18px auto 0; padding: 20px; text-align: center; background: #f4f1ea; border-top: 3px solid var(--accent); }
+.tiktok-fallback strong { font: 800 23px/1 var(--display); text-transform: uppercase; }
+.tiktok-fallback p { margin: 8px 0 16px; color: #5d5d5d; font-size: 12px; }
+.tiktok-fallback .btn { min-height: 45px; padding: 10px 15px; font-size: 11px; }
 @keyframes bounce { to { transform: translateY(-8px); } }
 
 .process-section { padding: 105px 0; background: var(--accent); color: var(--ink); }
