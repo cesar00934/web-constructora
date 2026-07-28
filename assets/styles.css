@@ -386,7 +386,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .site-header { padding: 12px 0; }
   .brand-logo { width: 116px; height: 58px; }
   .hero { min-height: 790px; padding-top: 116px; }
-  .hero h1 { letter-spacing: -1px; }
+  .hero h1 { font-size: clamp(40px, 12.5vw, 58px); letter-spacing: -1px; line-height: .9; }
   .eyebrow { font-size: 10px; letter-spacing: 1.4px; }
   .hero-description { margin-top: 24px; font-size: 15px; }
   .hero-actions { display: grid; }
