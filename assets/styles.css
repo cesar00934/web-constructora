@@ -160,9 +160,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
   line-height: .86;
   letter-spacing: -2px;
 }
-.hero h1 { font-size: clamp(78px, 9.3vw, 146px); }
+.hero h1 { font-size: clamp(60px, 7.2vw, 104px); }
 .hero h1 em { color: var(--accent); font-style: normal; }
-.hero-description { max-width: 650px; margin: 32px 0 0; font-size: 18px; line-height: 1.75; color: rgba(255,255,255,.78); }
+.hero-description { max-width: 650px; margin: 38px 0 0; font-size: 18px; line-height: 1.75; color: rgba(255,255,255,.78); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 38px; }
 .btn {
   min-height: 54px;
@@ -314,7 +314,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .main-nav { gap: 18px; }
   .main-nav > a:not(.nav-cta) { font-size: 11px; }
   .hero-content { grid-template-columns: 1fr 270px; gap: 35px; }
-  .hero h1 { font-size: clamp(73px, 10vw, 112px); }
+  .hero h1 { font-size: clamp(60px, 8.5vw, 92px); }
   .split-heading { gap: 50px; }
   .service-grid { grid-template-columns: repeat(2, 1fr); }
   .feature-copy { padding-left: 48px; }
@@ -361,7 +361,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-overlay { background: linear-gradient(90deg, rgba(9,9,9,.96) 0%, rgba(9,9,9,.76) 75%, rgba(9,9,9,.55) 100%), linear-gradient(0deg, rgba(9,9,9,.9), transparent 55%); }
   .hero-content { grid-template-columns: 1fr; padding-top: 0; }
   .hero-copy { max-width: 670px; }
-  .hero h1 { font-size: clamp(65px, 16vw, 104px); }
+  .hero h1 { font-size: clamp(50px, 10vw, 78px); }
   .hero-card { display: none; }
   .trust-row div { min-height: 78px; }
   .trust-row span { font-size: 10px; }
@@ -386,9 +386,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .site-header { padding: 12px 0; }
   .brand-logo { width: 116px; height: 58px; }
   .hero { min-height: 790px; padding-top: 116px; }
-  .hero h1 { letter-spacing: -1px; }
+  .hero h1 { font-size: clamp(40px, 11.5vw, 52px); letter-spacing: -1px; }
   .eyebrow { font-size: 10px; letter-spacing: 1.4px; }
-  .hero-description { margin-top: 24px; font-size: 15px; }
+  .hero-description { margin-top: 28px; font-size: 15px; }
   .hero-actions { display: grid; }
   .hero-actions .btn { width: 100%; }
   .hero-bottom { position: relative; margin-top: 70px; }
